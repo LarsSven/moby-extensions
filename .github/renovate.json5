@@ -3,9 +3,11 @@
   "extends": [
     "config:recommended",
     "helpers:pinGitHubActionDigestsToSemver",
-    "helpers:githubDigestChangelogs"
+    "helpers:githubDigestChangelogs",
+    ":gitSignOff"
   ],
   "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict",
   "customManagers": [
     {
       "description": "Track Go lint tools used by make lint",
