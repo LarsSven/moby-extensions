@@ -240,5 +240,5 @@ func TestListenDeliversConfig(t *testing.T) {
 	assert.Equal(t, got["enabled"], true)
 
 	cancel()
-	<-done
+	assert.NilError(t, <-done)
 }
