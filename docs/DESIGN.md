@@ -245,7 +245,7 @@ Context cancellation errors and deadline errors become `Canceled` and `DeadlineE
 All other errors become `Unknown`.
 
 Messages use proto3.
-Supported fields are scalar values, `string`, `time.Duration` `[]byte`, repeated scalars such as `[]string`, string-keyed scalar maps such as `map[string]string`, pointer nested messages such as `*Other`, and repeated nested messages such as `[]Other`.
+Supported fields are scalar values, `string`, `time.Duration`, `[]byte`, repeated scalars such as `[]string`, string-keyed scalar maps such as `map[string]string`, pointer nested messages such as `*Other`, and repeated nested messages such as `[]Other`.
 A single nested message must be a pointer; value nested messages are rejected.
 Other shapes fail generation rather than producing ambiguous wire code.
 
